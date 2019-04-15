@@ -1,0 +1,13 @@
+
+.row{background-color:#408080;}
+.div,#center{
+	border-color: white;
+	  border-right-style: solid;
+	    border-left-style: solid;
+	    border-width: 1px 
+	}
+.div,#right, nav-item{ text-align: right;}
+.div,#center, navbar-nav,nav-item {text-align: center;}
+
+.navbar-expand-sm{background-color:#408080;}
+.container,a{color:white;}

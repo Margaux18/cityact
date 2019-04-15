@@ -1,0 +1,41 @@
+/* nav{ background-color: #000080} */
+/*old one
+.navbar-brand{color:white}
+
+a{color:white}
+
+.fontsize{
+	font-size: 1.4rem
+	}
+
+i{ height: 25px; width :25px;}
+.navbar-default{background-color:#408080;}
+
+.navbar-expand-sm{background-color:#408080; } */
+
+/* . */
+/* opacity: @opacity; */
+/*   // IE8 filter */
+/*   @opacity-ie: (@opacity * 70); */
+/*   filter: ~"alpha(opacity=@{opacity-ie})"; } */ 
+
+.navbar-brand{color:white;}
+.navbar-expand-sm{background-color:#408080; opacity:.8;}
+.container,a{color:white;}
+
+
+
+/* CSS navbar connecté - test grid */
+
+/* .row{background-color:#408080;} */
+.div,#center{
+	border-color: white;
+	  border-right-style: solid;
+	    border-left-style: solid;
+	    border-width: 1px 
+	}
+.div,#right, nav-item{ text-align: right;}
+.div,#center, navbar-nav,nav-item {text-align: center;}
+
+.navbar-expand-sm{background-color:#408080;}
+.container,a{color:white;}
