@@ -50,7 +50,7 @@
      <li class="nav-item">
        <a class="nav-link" href="#">
       <i class="fas fa-search"></i>
-         Search
+         Search 
        </a>
      </li>
       <li class="nav-item">
