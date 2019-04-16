@@ -22,7 +22,7 @@ public class AmbientPower implements java.io.Serializable {
 
 	private int idambientPower;
 	private String latitude;
-	private String longitude;
+	private String longitude; 
 	private Date dateCreation;
 	private Integer votePos;
 	private Integer voteNeg;
