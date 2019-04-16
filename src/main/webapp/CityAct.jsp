@@ -18,8 +18,10 @@
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 	crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="css/css_navbar.css">
-<link rel="stylesheet" type="text/css" href="css/css_login.css">
+<link href="<c:url value="/resources/css/css_navbar.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/css_login.css" />" rel="stylesheet">
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
