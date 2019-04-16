@@ -44,7 +44,7 @@
 					<a class="navbar-brand"
 						href="C:/Users/IN-ST-004/eclipse-workspace/UrbanProject/src/main/webapp/pictures/CityAct.jpg">
 						<img src="pictures/CityAct.jpg" width="30" height="30"
-						class="d-inline-block align-top" alt=" ">CityAct
+						class="d-inline-block align-top mr-4" alt="Logo CityAct">CityAct
 					</a>
 
 				</div>
@@ -55,17 +55,17 @@
 				<!-- 				Links <ul class="navbar-nav justify-content-center"> -->
 				<ul class="navbar-nav nav-fill">
 					<li class="nav-item"><a class="nav-link" href="accueil.jsp"><i
-							class="fas fa-home fa-2x "></i>Accueil </a>
+							class="fas fa-home fa-2x mr-2"></i>Accueil</a>
 					<li class="nav-item"><a class="nav-link"
-						href="Qui_sommes_nous.jsp"><i class="fas fa-users fa-2x ">
+						href="Qui_sommes_nous.jsp"><i class="fas fa-users fa-2x mr-2">
 						</i>Qui sommes-nous?</a><span class="sr-only">(current)</span></li>
 
 					<li class="nav-item"><a class="nav-link" href="#"><i
-							class="fas fa-map-marked-alt fa-2x "></i> Carte</a><span
+							class="fas fa-map-marked-alt fa-2x mr-2 "></i> Carte</a><span
 						class="sr-only">(current)</span></li>
 
 					<li class="nav-item"><a class="nav-link" href="#"><i
-							class="far fa-question-circle fa-2x  "></i>FAQ</a> <span
+							class="far fa-question-circle fa-2x mr-2 "></i>FAQ</a> <span
 						class="sr-only">(current)</span></li>
 
 				</ul>
@@ -78,11 +78,11 @@
 
 					<li class="nav-item"><a class="nav-link" href="signup.jsp"><span
 							class="glyphicon glyphicon-user"></span> <i
-							class="fas fa-user-edit fa-2x "></i> Sign Up</a></li>
+							class="fas fa-user-edit fa-2x mr-1.5"></i> Sign Up</a></li>
 
 					<li class="nav-item dropdown "><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"><i class="fas fa-sign-in-alt fa-2x"></i>
+						data-toggle="dropdown"><i class="fas fa-sign-in-alt fa-2x mr-1"></i>
 							Login</a>
 
 						<div class="dropdown-menu dropdown-menu-right p-2" style="width:15em;">
