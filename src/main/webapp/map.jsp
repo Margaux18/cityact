@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html >
 <html>
@@ -18,7 +16,8 @@
 	crossorigin="anonymous">
 
 
-<link rel="stylesheet" type="text/css" href="css/css_map.css">
+<%-- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css_map.css"/> --%>
+<link href="<c:url value="/resources/css/css_map.css" />" rel="stylesheet">
 
 </head>
 <body>
@@ -46,7 +45,7 @@
 						<div class="row my-auto" id="row_filters">
 <!-- 							<form class="form-inline col-sm-2">
 								<div class="input-group input-group-btn mx-auto">
-          							<input class="form-control py-2" type="search" placeholder="OÃ¹ chercher?" id="pac-input">
+          							<input class="form-control py-2" type="search" placeholder="Où chercher?" id="pac-input">
       								<span class="input-group-append">
        									<button class="btn btn-outline-secondary" type="button">
             								<i class="fa fa-search"></i>
@@ -58,7 +57,7 @@
 							<form class="form-inline col-sm-8">
 								<div class="dropdown col-sm-4">
   									<button class="btn btn-secondary dropdown-toggle btn-block btn_dropdown" type="button" id="btn_category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  								 		 CatÃ©gorie
+  								 		 Catégorie
   									</button>
   									<div class="dropdown-menu" aria-labelledby="btn_category">
   										<div class="list-group">
@@ -79,7 +78,7 @@
   											<div class="dropdown_checkbox checkbox list-group-item col-12 py-1">
   													<div class="row">
   														<input class="form-check-input col-2 my-auto" id="input_category_propamenagement" type="checkbox" value="" id="defaultCheck1"> 
-  														<label class="col-9 label_of_filterscheckbox" for="input_category_propamenagement">Proposition d'amÃ©nagements</label>
+  														<label class="col-9 label_of_filterscheckbox" for="input_category_propamenagement">Proposition d'aménagements</label>
   													</div>		
   											</div>
   										
@@ -95,7 +94,7 @@
 								
 								<div class="dropdown col-sm-4">
   									<button class="btn btn-secondary dropdown-toggle btn-block btn_dropdown" type="button" id="btn_souscategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  								 		 Sous-CatÃ©gories
+  								 		 Sous-Catégories
   									</button>
   									<div class="dropdown-menu" aria-labelledby="btn_souscategory">
   										<div class="list-group">
@@ -116,13 +115,13 @@
   												<div class="checkbox col-12 py-1">
   													<div class="row">
   														<input class="form-check-input col-2 my-auto" id="input_souscategory_degradation" type="checkbox" value="" id="defaultCheck1">
-  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_degradation">DÃ©gradations</label>
+  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_degradation">Dégradations</label>
   													</div>
   												</div>
   												<div class="checkbox col-12 py-1">
   													<div class="row">
   														<input class="form-check-input col-2 my-auto" id="input_souscategory_objabandaonnes" type="checkbox" value="" id="defaultCheck1">
-  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_objabandaonnes">Objets abandonnÃ©s</label>
+  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_objabandaonnes">Objets abandonnés</label>
   													</div>
   												</div>
   												<div class="checkbox col-12 py-1">
@@ -135,7 +134,7 @@
   										
   											
   											<div class="list-group-item">
-  												<h3 class="list-group-item-heading col-12">Proposition d'amÃ©nagements</h3>
+  												<h3 class="list-group-item-heading col-12">Proposition d'aménagements</h3>
   												<div class="checkbox col-12 py-1">
   													<div class="row">
   														<input class="form-check-input col-2 my-auto" id="input_souscategory_temporaire" type="checkbox" value="" id="defaultCheck1">
@@ -155,7 +154,7 @@
   												<div class="checkbox col-12 py-1">
   													<div class="row">
   														<input class="form-check-input col-2 my-auto" id="input_souscategory_ambientpower" type="checkbox" value="" id="defaultCheck1">
-  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_ambientpower">Aucune sous-catÃ©gorie</label>
+  														<label class="col-9 label_of_filterscheckbox" for="input_souscategory_ambientpower">Aucune sous-catégorie</label>
   													</div>
   												</div>
   											</div>
@@ -176,14 +175,14 @@
   									<div class="dropdown-menu" aria-labelledby="btn_ajout">
   										<button class="col-12 list-group-item btn btn-primary btn-block btn_of_btn_ajout">Signalements</button>
   										<button class="col-12 list-group-item btn btn-primary btn-block btn_of_btn_ajout">Ambient Power</button>
-  										<button class="col-12 list-group-item btn btn-primary btn-block btn_of_btn_ajout">Propositions d'amÃ©nagements</button>
+  										<button class="col-12 list-group-item btn btn-primary btn-block btn_of_btn_ajout">Propositions d'aménagements</button>
   									</div>
   								</form>
 							</div>
 						</div>
 					</div>
 					
-					<script>/*  Script qui va permettre d'Ã©viter que les dropdown se ferment Ã  chaque clics Ã  cÃ´tÃ©s */
+					<script>/*  Script qui va permettre d'éviter que les dropdown se ferment à chaque clics à côtés */
 					$(document).on('click', '.dropdown', function (e) {
 						  e.stopPropagation();
 						});
@@ -286,7 +285,7 @@
 				      }
 					</script>
 				
-				<script>/*  Script qui va permettre d'Ã©viter que les dropdown se ferment Ã  chaque clics Ã  cÃ´tÃ©s */
+				<script>/*  Script qui va permettre d'éviter que les dropdown se ferment à chaque clics à côtés */
 					$(document).on('click', '.dropup', function (e) {
 						  e.stopPropagation();
 						});
@@ -307,32 +306,10 @@
            										</div>
            										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
            											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
            											</div>
            											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
-           											</div>
-           										</div>
-           									</div>
-           								</div>
-           							</div>
-            					</li>
-            					<li class="list-group-item li_descri_marqueur">
-           							<div class="row">
-           								<div class="col-sm-12 div_descriyimage_marqueur">
-           									<div class="row">
-           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
-           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
-           										</div>
-           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
-           											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
            											</div>
            											<div class="row">
            												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
@@ -351,32 +328,10 @@
            										</div>
            										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
            											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
            											</div>
            											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
-           											</div>
-           										</div>
-           									</div>
-           								</div>
-           							</div>
-            					</li>
-            					<li class="list-group-item li_descri_marqueur">
-           							<div class="row">
-           								<div class="col-sm-12 div_descriyimage_marqueur">
-           									<div class="row">
-           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
-           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
-           										</div>
-           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
-           											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
            											</div>
            											<div class="row">
            												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
@@ -395,32 +350,10 @@
            										</div>
            										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
            											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
            											</div>
            											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
-           											</div>
-           										</div>
-           									</div>
-           								</div>
-           							</div>
-            					</li>
-            					<li class="list-group-item li_descri_marqueur">
-           							<div class="row">
-           								<div class="col-sm-12 div_descriyimage_marqueur">
-           									<div class="row">
-           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
-           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
-           										</div>
-           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
-           											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
            											</div>
            											<div class="row">
            												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
@@ -439,32 +372,10 @@
            										</div>
            										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
            											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
            											</div>
            											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
-           											</div>
-           										</div>
-           									</div>
-           								</div>
-           							</div>
-            					</li>
-            					<li class="list-group-item li_descri_marqueur">
-           							<div class="row">
-           								<div class="col-sm-12 div_descriyimage_marqueur">
-           									<div class="row">
-           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
-           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
-           										</div>
-           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
-           											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
-           											</div>
-           											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
            											</div>
            											<div class="row">
            												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
@@ -483,10 +394,98 @@
            										</div>
            										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
            											<div class="row">
-           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'amÃ©nagements dans le centre</h6></div>
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
            											</div>
            											<div class="row">
-           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">CatÃ©gorie : sous-catÃ©gorie</h5></div>
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
+           											</div>
+           										</div>
+           									</div>
+           								</div>
+           							</div>
+            					</li>
+            					<li class="list-group-item li_descri_marqueur">
+           							<div class="row">
+           								<div class="col-sm-12 div_descriyimage_marqueur">
+           									<div class="row">
+           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
+           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
+           										</div>
+           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
+           											<div class="row">
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
+           											</div>
+           										</div>
+           									</div>
+           								</div>
+           							</div>
+            					</li>
+            					<li class="list-group-item li_descri_marqueur">
+           							<div class="row">
+           								<div class="col-sm-12 div_descriyimage_marqueur">
+           									<div class="row">
+           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
+           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
+           										</div>
+           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
+           											<div class="row">
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
+           											</div>
+           										</div>
+           									</div>
+           								</div>
+           							</div>
+            					</li>
+            					<li class="list-group-item li_descri_marqueur">
+           							<div class="row">
+           								<div class="col-sm-12 div_descriyimage_marqueur">
+           									<div class="row">
+           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
+           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
+           										</div>
+           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
+           											<div class="row">
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
+           											</div>
+           										</div>
+           									</div>
+           								</div>
+           							</div>
+            					</li>
+            					<li class="list-group-item li_descri_marqueur">
+           							<div class="row">
+           								<div class="col-sm-12 div_descriyimage_marqueur">
+           									<div class="row">
+           										<div class="col-sm-3 d-flex justify-content-center align-items-center div_img_of_marqueur">
+           											<img src="resources/images/persagotiere3-2_915.jpg" alt="" class="img-thumbnail">
+           										</div>
+           										<div class="col-sm-9 pt-1 div_descri_of_marqueur">
+           											<div class="row">
+           												<div class="col-sm-12 div_titre_marqueur""><h6 class="h_titre_marqueur">Titre : Projet d'aménagements dans le centre</h6></div>
+           											</div>
+           											<div class="row">
+           												<div class="col-sm-12 pt-2"><h5 class="h_category_y_souscategory">Catégorie : sous-catégorie</h5></div>
            											</div>
            											<div class="row">
            												<div class="col-sm-12 text-justify px-3"> <p class="p_marqueur_description">  aaaaaa Nulla quis turpis rhoncus sem hendrerit tincidunt eleifend non felis. Donec iaculis quis lorem non luctus. In hac habitasse platea dictumst.</p></div>
