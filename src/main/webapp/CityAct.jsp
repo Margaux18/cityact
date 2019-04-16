@@ -94,14 +94,20 @@
 								</div>
 								
 								
-								<div class="form-group">
+								<div class="form-group mb-1">
 									<label for="pwd">Mot de passe:</label> <input type="password"
 										class="form-control" id="pwd">
 								</div>
-								<div class="checkbox">
-									<label><input type="checkbox">Se souvenir de moi</label>
+								
+								<div id="mpf">
+									<a class="dropdown-item" href="forgottenpsd.jsp">Mot de passe oublié ?</a>
 								</div>
-								<div  id="b1"  class="form-group"> <button type="submit" class="btn btn-default">Submit</button>
+								<div class="dropdown-divider "></div>
+								<div class="rememberme">
+									<label ><input type="checkbox" class="mr-2"><span>Se souvenir de moi</span></label>
+								</div>
+								
+								<div  id="b1"  class="form-group"> <button id="btnsubmit" type="submit" class="btn btn-default p-2">Envoyer</button>
 							</div>
 							</form>
 						</div></li>

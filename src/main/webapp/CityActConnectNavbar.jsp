@@ -59,7 +59,7 @@
 						<li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user fa-2x mr-2"></i>Pseudo</a>
 							
 							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="#">Mon profil</a> 
+								<a class="dropdown-item" href="monprofil.jsp">Mon profil</a> 
 								<a class="dropdown-item" href="#">Modifier mon compte</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="#"><i

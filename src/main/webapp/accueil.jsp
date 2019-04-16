@@ -38,6 +38,8 @@
 	<c:import url="/CityAct.jsp"></c:import>
 </c:if>
 
+
+
 <!-- <section id="strasbourg"> -->
 <!-- <img class="irc_mi" -->
 <!-- 	src="https://bdaecpm.files.wordpress.com/2015/07/place-kleber.jpg" -->
@@ -52,15 +54,14 @@
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">CityAct</h1>
-<!--         <p class="lead">Accéder au site </p> -->
-        <button class="btn">Accéder au site</button>
+  <div class="container h-100 ">
+    <div class="row h-100">
+      <div class="col-12">
+        <button class="btn1" > Accéder au site </button>
       </div>
     </div>
   </div>
+<!--         <i class="fa fa-angle-down"></i> -->
 </header>
 
 <!-- Page Content -->
@@ -72,31 +73,32 @@
 <!-- </section> -->
 
 <section class="py-5"> 
-<h1>CityAct</h1><hr>
+<h1 id="titre">CityAct</h1>
+<hr class="pg-titl-bdr-btm">
 <br>
 <div class="col-sm-12">
 <div class="row">
-<div id="Pour qui" class="col-sm-4">
-	<h5>Pour qui?</h5>
+<div class="col-sm-4">
+	<h5 id="Pourqui">Pour qui ?</h5>
 
-	<p>Tout le monde, que vous soyez habitant ou bien usager fréquent
+	<p id="whom">Tout le monde, que vous soyez habitant ou bien usager fréquent
 		de cet espace vous êtes invités à partager votre vision de VOTRE
 		VILLE! Parce que c'est ensemble que nous la vivons, ce doit être
 		ensemble que nous la construisons (ou améliorons).</p>
 </div>
 
 
-<div id="Pourquoi"class="col-sm-4">
-	<h5>Pourquoi?</h5>
+<div class="col-sm-4">
+	<h5 id="Pourquoi">Pourquoi ?</h5>
 
-	<p>proposition, retour impact reel, communication, parler exp
+	<p id="why">proposition, retour impact reel, communication, parler exp
 		perso, democratie, avis citoyens -expertise pour meilleur espace pensé</p>
 </div>
 
-<div id="Comment" class="col-sm-4">
-	<h5>Comment</h5>
+<div  class="col-sm-4">
+	<h5 id="Comment">Comment ?</h5>
 
-	<p>développer les principes de fonctionnement, ma mise en relation
+	<p id="how">développer les principes de fonctionnement, ma mise en relation
 		citoyens, et ressources techniques et politiques concernnés de la
 		ville. Aborder les 3 xcatégories en synthétisant l'objectif de chacune
 		d'entre elle.</p>
