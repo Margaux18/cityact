@@ -63,15 +63,14 @@
       <div class="valid-feedback">
         Looks good!
       </div>
-      
     </div>
     <div class="col-md-auto  mb-3 ">
-      <label for="validationCustomEmail">Email</label>
+      <label for="validationCustomPseudo">Email</label>
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend">@</span>
         </div>
-        <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+        <input type="text" class="form-control" id="validationCustomEmail" placeholder="Email" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Veuillez entrer une adresse mail valide.
         </div>

@@ -1,80 +1,44 @@
-.btn1 {
+/* body{ */
+/* background-image: url("https://bdaecpm.files.wordpress.com/2015/07/place-kleber.jpg"); */
+/* background-size: cover; */
+/*   height: auto; */
+/*   z-index: -1; */
+
+/* } */
+.btn {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-.btn1:hover {
-  background-color: darkcyan !important;
+.btn:hover {
+  background-color: black; /* Green */
   color: white;
-  opacity:.8;
-  border:none!important;
-} 
+}
 
+.btn {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-
-.btn1 {
+.btn {
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
- 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: transparent!important;
-  border: 2px solid white!important;
-/*   opacity:.7; */
-  color: white;
-
-  font-size: 1.3em !important;
-  
-  padding:  8px 28px;
-/*   border: none; */
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
   cursor: pointer;
-  border-radius: 50px!important;
+  border-radius: 5px;
   text-align: center;
-  font-family:"Poppins"!important, verdana ;
-  text-transform: uppercase;
-  letter-spacing: 4px!important;
- 
-/*   font-weight: bold; */
-/*   font-stretch: extra-expanded; */
+}
+
+
   
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  
-/* .btn{ font-family: "Poppins", sans-serif; */
-/* text-transform: uppercase; */
-/* font-weight: 50; */
-/* font-size: 16px; */
-/* letter-spacing: 1px; */
-/* display: inline-block; */
-/* padding: 8px 28px; */
-/* border-radius: 50px; */
-/* transition: 0.5s; */
-/* margin: 10px; */
-/* border: 2px solid #fff; */
-/* color: #fff; */
-
-
-/* background-color: transparent; */
-
-/* box-sizing: border-box;} */
-/* .btn { */
-/*   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-/* } */
-
-
-.pg-titl-bdr-btm {
-    width: 300px;
-    height: 2px;
-    background-color: #28b57c;}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;}
-  
-#titre{text-align:center;
-font-family: verdana,impact;
-color: #400040; }
+h1{text-align:center;
+font-family: verdana,impact;}
 
 /* .irc_mi{ */
 /* background-size: cover; */
@@ -82,7 +46,7 @@ color: #400040; }
 /* width:100%;}  */
 
 .masthead {
-  height: 85vh;
+  height: 100vh;
   min-height: 500px;
   background-image: url("https://bdaecpm.files.wordpress.com/2015/07/place-kleber.jpg");
   background-size: cover;
@@ -90,15 +54,5 @@ color: #400040; }
   background-repeat: no-repeat;
 }
 
-h5, #Pourqui{text-align:center; font-family: Verdana, bold;}
-p, #whom{text-align: justify;}
-
-h5, #Pourquoi{text-align:center; font-family: Verdana, bold;}
-p, #why{text-align: justify;}
-
-
-h5, #Comment{text-align:center; font-family: Verdana, bold;}
-p, #how{text-align : justify;
-}
-
-
+.font-weight-light{font-family: "courrier new";}
+.lead{ font-family: verdana}
