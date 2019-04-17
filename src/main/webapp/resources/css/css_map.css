@@ -28,11 +28,6 @@
 /* Permet d'enlever le style de dropdown menu du bootstrap */
 .dropdown-toggle {
   background-color: transparent;
-  border-color: #fff;
-  border-style: solid;
-  border-top: none;
-  border-right: none;
-  border-left: none;
 }
 
 /* Div containing the filters and add project buttons */
@@ -70,7 +65,7 @@
 #btn_filtre:hover
 {
 	background-color:#400040;
-	border:none;
+	border:none !important;
 	opacity:0.7;
 }
 
@@ -108,6 +103,7 @@
 	color:white !important;
 	opacity:0.9 !important;
 	background-color: #400040 !important;
+	border:none !important;
 }
 
 #div_all_marqueurs
