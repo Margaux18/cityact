@@ -1,19 +1,14 @@
-.navbar-brand{color:white; font-size:1.4em}
-.navbar-expand-sm{background-color:#408080; opacity:.8;}
-.container,a{color:white;}
+.navbar-brand{color:white !important; font-size:1.4em;}
 
-/* CSS navbar connecté - test grid */
+.navbar-expand-sm{background-color:#408080CC;}
 
-/* .row{background-color:#408080;} */
+#aC{color:white;}
+#aC:hover{color:#400040; opacity:0.6;}
 .div,#center{
-	border-color: white;
-	  border-right-style: solid;
-	    border-left-style: solid;
-	    border-width: 1px 
-	}
+    border-color: white;
+      border-right-style: solid;
+        border-left-style: solid;
+        border-width: 1px ;  }
+
 .div,#right, nav-item{ text-align: right;}
 .div,#center, navbar-nav,nav-item {text-align: center;}
-
-.navbar-expand-sm{background-color:#408080;}
-.container,a{color:white;}
-

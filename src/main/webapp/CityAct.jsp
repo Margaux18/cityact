@@ -4,7 +4,7 @@
 <!DOCTYPE html >
 <html class="ink">
 <head>
-<title>CityAct / Barre de navigation</title>
+<title>CityAct | Barre de navigation</title>
 
 <meta charset="utf-8">
 <meta name="viewport"
@@ -18,12 +18,8 @@
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 	crossorigin="anonymous">
 
-<link href="<c:url value="/resources/css/css_navbar.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/css/css_login.css" />"
-	rel="stylesheet">
-
-
+<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/css_navbar.css" />">
+<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/css_login.css" />">
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -56,18 +52,18 @@
 
 			<div id="center" class="col-sm-6">
 				<!-- 				Links <ul class="navbar-nav justify-content-center"> -->
-				<ul class="navbar-nav nav-fill">
-					<li class="nav-item"><a class="nav-link" href="accueil.jsp"><i
+				<ul class="navbar-nav nav-fill" >
+					<li class="nav-item"><a id="aC" class="nav-link" href="accueil.jsp"><i
 							class="fas fa-home fa-2x mr-2"></i>Accueil</a>
-					<li class="nav-item"><a class="nav-link"
+					<li class="nav-item"><a  id="aC" class="nav-link" 
 						href="Qui_sommes_nous.jsp"><i class="fas fa-users fa-2x mr-2">
 						</i>Qui sommes-nous?</a><span class="sr-only">(current)</span></li>
 
-					<li class="nav-item"><a class="nav-link" href="#"><i
+					<li class="nav-item"><a id="aC" class="nav-link" href="#"><i
 							class="fas fa-map-marked-alt fa-2x mr-2 "></i> Carte</a><span
 						class="sr-only">(current)</span></li>
 
-					<li class="nav-item"><a class="nav-link" href="#"><i
+					<li class="nav-item"><a id="aC" class="nav-link" href="#"><i
 							class="far fa-question-circle fa-2x mr-2 "></i>FAQ</a> <span
 						class="sr-only">(current)</span></li>
 
@@ -79,11 +75,11 @@
 				<ul class="navbar-nav justify-content-end ">
 
 
-					<li class="nav-item"><a class="nav-link" href="signup.jsp"><span
+					<li class="nav-item"><a id="aC" class="nav-link" href="signup.jsp"><span
 							class="glyphicon glyphicon-user"></span> <i
 							class="fas fa-user-edit fa-2x mr-1.5"></i> Sign Up</a></li>
 
-					<li class="nav-item dropdown "><a
+					<li class="nav-item dropdown "><a id="aC"
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"><i class="fas fa-sign-in-alt fa-2x mr-1"></i>
 							Login</a>
