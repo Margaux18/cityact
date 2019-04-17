@@ -3,9 +3,12 @@ package fr.formation.inti.entities;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -17,7 +20,7 @@ import javax.persistence.Table;
 @Table(name = "users", catalog = "urbanproject")
 public class Users implements java.io.Serializable {
 
-	private int idusers;
+	private Long idusers;
 	private String mail;
 	private String pseudo;
 	private String password;
@@ -28,13 +31,13 @@ public class Users implements java.io.Serializable {
 	public Users() {
 	}
 
-	public Users(int idusers, String mail, String password) {
+	public Users(Long idusers, String mail, String password) {
 		this.idusers = idusers;
 		this.mail = mail;
 		this.password = password;
 	}
 
-	public Users(int idusers, String mail, String pseudo, String password, Integer age, String adress,
+	public Users(Long idusers, String mail, String pseudo, String password, Integer age, String adress,
 			Set<Comment> comments) {
 		this.idusers = idusers;
 		this.mail = mail;
@@ -46,13 +49,13 @@ public class Users implements java.io.Serializable {
 	}
 
 	@Id
-
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idusers", unique = true, nullable = false)
-	public int getIdusers() {
+	public Long getIdusers() {
 		return this.idusers;
 	}
 
-	public void setIdusers(int idusers) {
+	public void setIdusers(Long idusers) {
 		this.idusers = idusers;
 	}
 
