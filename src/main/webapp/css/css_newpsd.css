@@ -1,20 +1,5 @@
-#lock, .fa fa-lock fa-4x{ position: absolute;
-top:30%; 
-left:50%
-}
+/* #lock, .fa fa-lock fa-6x{ position: absolute; */
+/* top:30%;  */
+/* left:50% */
+/* } <i id="lock" class="fa fa-lock fa-6x"></i> */
 
-.container {
-    width: 1170px;
-}
-.container {
-    width: 970px;
-}
-.container {
-    width: 750px;
-}
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}

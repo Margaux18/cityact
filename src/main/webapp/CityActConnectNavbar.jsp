@@ -4,7 +4,7 @@
 <!DOCTYPE html >
 <html class="ink">
 <head>
-<title>Navbar connected</title>
+<title>CityAct | Connecté </title>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +24,7 @@
     <div id="left" class="col-sm-3">
         <!-- Brand -->
       <div class="navbar-header">
-		<a class="navbar-brand " href="C:/Users/IN-ST-004/eclipse-workspace/UrbanProject/src/main/webapp/pictures/CityAct.jpg">
+		<a id="aC" class="navbar-brand " href="C:/Users/IN-ST-004/eclipse-workspace/UrbanProject/src/main/webapp/pictures/CityAct.jpg">
 		<img src="pictures/CityAct.jpg" width="30" height="30" class="d-inline-block align-top mr-4" alt=" ">CityAct</a>
 		</div>
 
@@ -33,18 +33,18 @@
     <div id="center" class="col-sm-6">
 					<!-- Links -->
 					<ul class="navbar-nav nav-fill">
-						<li class="nav-item"><a class="nav-link" href="accueil.jsp"><i
+						<li class="nav-item"><a id="aC" class="nav-link" href="accueil.jsp"><i
 								class="fas fa-home fa-2x mr-2"></i>Accueil</a><span class="sr-only">(current)</span>
 						</li>
 
-						<li class="nav-item"><a class="nav-link" href="Qui_sommes_nous.jsp"><i class="fas fa-users fa-2x mr-2">
+						<li class="nav-item"><a id="aC" class="nav-link" href="Qui_sommes_nous.jsp"><i class="fas fa-users fa-2x mr-2">
 						</i>Qui sommes-nous?</a><span class="sr-only">(current)</span>
 								</li>
 			
-						<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-map-marked-alt fa-2x mr-2"></i>
+						<li class="nav-item"><a id="aC" class="nav-link" href="#"><i class="fas fa-map-marked-alt fa-2x mr-2"></i>
 						Carte</a><span class="sr-only">(current)</span></li>
 						
-						<li class="nav-item"><a class="nav-link" href="#"><i
+						<li class="nav-item"><a id="aC" class="nav-link" href="#"><i
 								class="far fa-question-circle fa-2x mr-2 "></i>FAQ</a> <span class="sr-only">(current)</span></li>
 								
 							</ul>
@@ -55,8 +55,8 @@
    
 					<ul class="navbar-nav justify-content-end">
 						<!-- Dropdown -->
-						<li class="nav-item"><a class="nav-link" href="#" ><i class="fas fa-bell fa-2x mr-2"></i>Mes alertes</a></li>
-						<li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user fa-2x mr-2"></i>Pseudo</a>
+						<li class="nav-item"><a id="aC" class="nav-link" href="#" ><i class="fas fa-bell fa-2x mr-2"></i>Mes alertes</a></li>
+						<li class="nav-item dropdown "><a id="aC" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user fa-2x mr-2"></i>Pseudo</a>
 							
 							<div class="dropdown-menu dropdown-menu-right">
 								<a class="dropdown-item" href="monprofil.jsp">Mon profil</a> 
