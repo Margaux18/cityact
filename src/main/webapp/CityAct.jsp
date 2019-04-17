@@ -18,8 +18,10 @@
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 	crossorigin="anonymous">
 
-<link href="<c:url value="/resources/css/css_navbar.css" />" rel="stylesheet">
-<link href="<c:url value="/resources/css/css_login.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/css_navbar.css" />"
+	rel="stylesheet">
+<link href="<c:url value="/resources/css/css_login.css" />"
+	rel="stylesheet">
 
 
 
@@ -43,9 +45,8 @@
 			<div id="left" class="col-sm-3">
 				<!-- brand -->
 				<div class="navbar-header">
-					<a class="navbar-brand"
-						href="C:/Users/IN-ST-004/eclipse-workspace/UrbanProject/src/main/webapp/pictures/CityAct.jpg">
-						<img src="pictures/CityAct.jpg" width="30" height="30"
+					<a class="navbar-brand" href="">
+						<img src="<c:url value="/resources/pictures/CityAct.jpg" />" width="30" height="30"
 						class="d-inline-block align-top mr-4" alt="Logo CityAct">CityAct
 					</a>
 

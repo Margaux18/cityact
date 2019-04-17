@@ -24,8 +24,10 @@
     <div id="left" class="col-sm-3">
         <!-- Brand -->
       <div class="navbar-header">
-		<a class="navbar-brand " href="C:/Users/IN-ST-004/eclipse-workspace/UrbanProject/src/main/webapp/pictures/CityAct.jpg">
-		<img src="pictures/CityAct.jpg" width="30" height="30" class="d-inline-block align-top mr-4" alt=" ">CityAct</a>
+		<a class="navbar-brand" href="">
+						<img src="<c:url value="/resources/pictures/CityAct.jpg" />" width="30" height="30"
+						class="d-inline-block align-top mr-4" alt="Logo CityAct">CityAct
+					</a>
 		</div>
 
     </div>
