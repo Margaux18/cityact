@@ -25,10 +25,6 @@ public class UsersService implements IUsersService {
 	      dao.setClazz( Users.class );
 	   }
 	   
-		
-		/* (non-Javadoc)
-		 * @see fr.formation.inti.services.IUsers_Service#getUserss()
-		 */
 
 		/* (non-Javadoc)
 		 * @see fr.formation.inti.services.IUsersService#getUsers()
@@ -37,10 +33,7 @@ public class UsersService implements IUsersService {
 		public List<Users> getUsers() {
 			return dao.findAll();
 		}
-		
-		/* (non-Javadoc)
-		 * @see fr.formation.inti.services.IUsers_Service#getUsers(java.lang.Long)
-		 */
+
 
 		/* (non-Javadoc)
 		 * @see fr.formation.inti.services.IUsersService#getUsers(java.lang.Long)
@@ -53,20 +46,13 @@ public class UsersService implements IUsersService {
 		
 
 		/* (non-Javadoc)
-		 * @see fr.formation.inti.services.IUsers_Service#addUsers(fr.formation.inti.entities.Users)
-		 */
-
-		/* (non-Javadoc)
 		 * @see fr.formation.inti.services.IUsersService#addUsers(fr.formation.inti.entities.Users)
 		 */
 		@Override
 		public void addUser(Users user) {
 			dao.create(user);
 		}
-		
-		/* (non-Javadoc)
-		 * @see fr.formation.inti.services.IUsers_Service#updateUsers(fr.formation.inti.entities.Users)
-		 */
+
 
 		/* (non-Javadoc)
 		 * @see fr.formation.inti.services.IUsersService#updateUsers(fr.formation.inti.entities.Users)
@@ -76,9 +62,6 @@ public class UsersService implements IUsersService {
 			dao.update(user);
 		}
 		
-		/* (non-Javadoc)
-		 * @see fr.formation.inti.services.IUsers_Service#deleteUsers(java.lang.Long)
-		 */
 
 		/* (non-Javadoc)
 		 * @see fr.formation.inti.services.IUsersService#deleteUsers(java.lang.Long)
