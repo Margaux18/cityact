@@ -26,3 +26,7 @@
 16 avr. 2019 16:30:10,699 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - ServiceRegistry created successfully
 16 avr. 2019 16:30:10,757 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - SessionFactory created successfully
 16 avr. 2019 16:30:10,757 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - Hibernate SessionFactory Configured successfully
+17 avr. 2019 10:09:58,198 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - Hibernate Configuration created successfully
+17 avr. 2019 10:09:58,198 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - ServiceRegistry created successfully
+17 avr. 2019 10:09:58,264 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - SessionFactory created successfully
+17 avr. 2019 10:09:58,264 {localhost-startStop-1} INFO  fr.formation.inti.listeners.Listener_SessionFactory  - Hibernate SessionFactory Configured successfully
