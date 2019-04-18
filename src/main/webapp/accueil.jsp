@@ -65,14 +65,6 @@
 <!--         <i class="fa fa-angle-down"></i> -->
 </header>
 
-<!-- Page Content -->
-<!-- <section class="py-5"> -->
-<!--   <div class="container"> -->
-<!--     <h2 class="font-weight-light">Page Content</h2> -->
-<!--     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p> -->
-<!--   </div> -->
-<!-- </section> -->
-
 <section class="py-5"> 
 <h1 id="titre">CityAct</h1>
 <hr class="pg-titl-bdr-btm">
