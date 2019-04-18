@@ -76,27 +76,42 @@
 <section class="py-5"> 
 <h1 id="titre">CityAct</h1>
 <hr class="pg-titl-bdr-btm">
+<br><br>
 <br>
+
+
 <div class="col-sm-12">
 <div class="row">
-<div class="col-sm-4">
-	<h5 id="Pourqui">Pour qui ?</h5>
 
+<div class="col-sm-2">
+<i id="u1"class="fas fa-users fa-10x float-right"></i>
+</div>
+
+<div class="col-sm-2">
+	<h5 id="Pourqui">Pour qui ?</h5>
+	
 	<p id="whom">Tout le monde, que vous soyez habitant ou bien usager fréquent
 		de cet espace vous êtes invités à partager votre vision de VOTRE
 		VILLE! Parce que c'est ensemble que nous la vivons, ce doit être
 		ensemble que nous la construisons (ou améliorons).</p>
 </div>
 
+<div class="col-sm-2 ">
+<i id="u2"class="far fa-question-circle fa-10x float-right" ></i>
+</div>
 
-<div class="col-sm-4">
+<div class="col-sm-2">
 	<h5 id="Pourquoi">Pourquoi ?</h5>
-
+	
 	<p id="why">proposition, retour impact reel, communication, parler exp
 		perso, democratie, avis citoyens -expertise pour meilleur espace pensé</p>
 </div>
 
-<div  class="col-sm-4">
+<div class="col-sm-2">
+<i id="u3"class="fas fa-cogs  fa-10x float-right"></i>
+</div>
+
+<div  class="col-sm-2">
 	<h5 id="Comment">Comment ?</h5>
 
 	<p id="how">développer les principes de fonctionnement, ma mise en relation
@@ -108,4 +123,6 @@
 </div>
 
 </section>
+
+<c:import url="/footer.jsp"></c:import>
 </html>

@@ -126,7 +126,7 @@
 
 
    <div id="img" class="text-right" title="Icon made by Freepik from flaticon licensed by Creative Commons BY 3.0" > <br> 
-   <img class="img-fluid" src="pictures/clipboard.jpg">
+   <img class="img-fluid" src="<c:url value="resources/pictures/clipboard.jpg" />"/>
 
 <br>
 </div>
